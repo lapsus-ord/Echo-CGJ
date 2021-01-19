@@ -23,6 +23,21 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Horizontal", _movement.x);
         animator.SetFloat("Vertical", _movement.y);
         animator.SetFloat("Speed", _movement.sqrMagnitude);
+
+        if (_movement.x == 1)
+        {
+            animator.SetFloat("lastDirection", 4);
+        } else if (_movement.x == -1)
+        {
+            animator.SetFloat("lastDirection", 3);
+        } else if (_movement.y == 1)
+        {
+            animator.SetFloat("lastDirection", 1);
+        }
+        else if (_movement.y == -1)
+        {
+            animator.SetFloat("lastDirection", 2);
+        }
         
         // Si on est dans le menu, on ne peut pas bouger
         _isInPause = menuPause.activeSelf;
