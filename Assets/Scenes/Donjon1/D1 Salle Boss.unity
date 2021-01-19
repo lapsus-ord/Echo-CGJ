@@ -7745,7 +7745,7 @@ Transform:
   - {fileID: 906143181}
   - {fileID: 1387424561}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &440024164
 GameObject:
@@ -8178,7 +8178,7 @@ RectTransform:
   - {fileID: 2094130240}
   - {fileID: 217781573}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8766,7 +8766,7 @@ RectTransform:
   - {fileID: 470710777}
   - {fileID: 115518197}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8859,7 +8859,7 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 1041811382}
   animator: {fileID: 1041811377}
-  menuPause: {fileID: 0}
+  menuPause: {fileID: 789544115}
   startingPosition: {fileID: 11400000, guid: ce78acf565966ff44bf778378f5167b0, type: 2}
 --- !u!70 &1041811381
 CapsuleCollider2D:
@@ -8961,7 +8961,7 @@ Transform:
   m_Children:
   - {fileID: 1567791563}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205269982
 GameObject:
@@ -10065,7 +10065,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2094130239
 GameObject:
