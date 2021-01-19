@@ -55,5 +55,9 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.MovePosition(rb.position + _movement * (moveSpeed * Time.fixedDeltaTime));
         }
+        else if (_isInPause)
+        {
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.ForceSoftware);
+        }
     }
 }

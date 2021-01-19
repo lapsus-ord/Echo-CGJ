@@ -10,19 +10,14 @@ public class Weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed = 20f;
 
-    public GameObject crosshair;
+    // public GameObject crosshair;
     private Vector3 target;
-
-    private void Start()
-    {
-        Cursor.visible = false;
-    }
 
     // Update is called once per frame
     void Update()
     {
         target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
-        crosshair.transform.position = new Vector2(target.x, target.y);
+        // crosshair.transform.position = new Vector2(target.x, target.y);
 
         Vector3 difference = target - firePoint.transform.position;
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
