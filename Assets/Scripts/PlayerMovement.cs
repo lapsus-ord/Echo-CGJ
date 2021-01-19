@@ -13,6 +13,11 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject menuPause;
     private Boolean _isInPause = false;
+    public VectorValue startingPosition;
+
+    void Start() {
+        transform.position = startingPosition.initialValue;
+    }
 
     void Update()
     {
@@ -24,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", _movement.y);
         animator.SetFloat("Speed", _movement.sqrMagnitude);
 
+        // Modification de la variable lastDirection, pour lancer la bonne animation Idle (en fonction de notre orientation)
         if (_movement.x == 1)
         {
             animator.SetFloat("lastDirection", 4);

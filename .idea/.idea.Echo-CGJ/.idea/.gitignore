@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.Echo-CGJ.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\mateo\Documents\My Games\Unity Projects\Echo-CGJ\.idea\.idea.Echo-CGJ\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
