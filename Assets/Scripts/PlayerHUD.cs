@@ -18,7 +18,7 @@ public class PlayerHUD : MonoBehaviour
             HUD.SetActive(!HUD.activeSelf);
             menuPause.SetActive(!HUD.activeSelf);
         }
-        if (Input.GetKeyDown("m"))
+        if (Input.GetButtonDown("Map"))
         {
             HUD.SetActive(!HUD.activeSelf);
             carte.SetActive(!HUD.activeSelf);
