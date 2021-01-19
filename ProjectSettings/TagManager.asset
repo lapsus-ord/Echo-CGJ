@@ -47,6 +47,9 @@ TagManager:
   - name: Decors
     uniqueID: 845703625
     locked: 0
+  - name: fg mais pas trop
+    uniqueID: 2804300513
+    locked: 0
   - name: Player
     uniqueID: 3082469669
     locked: 0
