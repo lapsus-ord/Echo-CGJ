@@ -339,7 +339,6 @@ GameObject:
   m_Component:
   - component: {fileID: 213619568}
   - component: {fileID: 213619569}
-  - component: {fileID: 213619570}
   m_Layer: 5
   m_Name: OptionMenu
   m_TagString: Untagged
@@ -382,21 +381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a0a8ec643db7f438aa1d21c84640da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &213619570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213619567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5179884f5088544eb710939a6b82d0e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 990972451}
-  mixer: {fileID: 24100000, guid: 8cdafed215a665e4a9dae659104b48b4, type: 2}
-  parameterName: MasterVol
 --- !u!1 &280926644
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,6 +1349,7 @@ GameObject:
   - component: {fileID: 1279705613}
   - component: {fileID: 1279705612}
   - component: {fileID: 1279705611}
+  - component: {fileID: 1279705615}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1454,6 +1439,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1279705615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279705610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5179884f5088544eb710939a6b82d0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 990972451}
+  mixer: {fileID: 24100000, guid: 8cdafed215a665e4a9dae659104b48b4, type: 2}
+  parameterName: MasterVol
 --- !u!1 &1293204434
 GameObject:
   m_ObjectHideFlags: 0
