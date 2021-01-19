@@ -8,24 +8,31 @@ public class PlayerMovement : MonoBehaviour
 
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
-    private Vector2 movement;
+    public Animator animator;
+    private Vector2 _movement;
 
     public GameObject menuPause;
-    private Boolean isInPause = false;
+    private Boolean _isInPause = false;
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        _movement.x = Input.GetAxisRaw("Horizontal");
+        _movement.y = Input.GetAxisRaw("Vertical");
+        
+        // Animation du personnage
+        animator.SetFloat("Horizontal", _movement.x);
+        animator.SetFloat("Vertical", _movement.y);
+        animator.SetFloat("Speed", _movement.sqrMagnitude);
+        
         // Si on est dans le menu, on ne peut pas bouger
-        isInPause = menuPause.activeSelf;
+        _isInPause = menuPause.activeSelf;
     }
 
     private void FixedUpdate()
     {
-        if (!isInPause)
+        if (!_isInPause)
         {
-            rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
+            rb.MovePosition(rb.position + _movement * (moveSpeed * Time.fixedDeltaTime));
         }
     }
 }
