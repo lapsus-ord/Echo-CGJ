@@ -6,6 +6,7 @@ public class PlayerHUD : MonoBehaviour
 {
     public GameObject HUD;
     public GameObject menuPause;
+    public GameObject carte;
     
     private void Update()
     {
@@ -13,6 +14,11 @@ public class PlayerHUD : MonoBehaviour
         {
             HUD.SetActive(!HUD.activeSelf);
             menuPause.SetActive(!HUD.activeSelf);
+        }
+        if (Input.GetKeyDown("m"))
+        {
+            HUD.SetActive(!HUD.activeSelf);
+            carte.SetActive(!HUD.activeSelf);
         }
     }
 }
