@@ -13,6 +13,12 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject menuPause;
     private Boolean _isInPause = false;
+    public VectorValue startingPosition;
+
+    void Start() {
+        transform.position = startingPosition.initialValue;
+    
+    }
 
     void Update()
     {
