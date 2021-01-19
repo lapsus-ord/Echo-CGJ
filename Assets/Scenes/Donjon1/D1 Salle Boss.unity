@@ -8827,8 +8827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001c91331d396564588e1dfbd8ad70ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HUD: {fileID: 0}
-  menuPause: {fileID: 0}
+  HUD: {fileID: 1033876699}
+  menuPause: {fileID: 789544115}
 --- !u!114 &1041811379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8841,7 +8841,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5179884f5088544eb710939a6b82d0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  slider: {fileID: 1638792344}
   mixer: {fileID: 24100000, guid: 8cdafed215a665e4a9dae659104b48b4, type: 2}
   parameterName: MasterVol
 --- !u!114 &1041811380
