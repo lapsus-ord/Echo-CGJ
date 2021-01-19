@@ -23,7 +23,9 @@
     <explicitExcludes>
       <Path>.git</Path>
       <Path>.idea</Path>
+      <Path>Amon's Legacy_Data</Path>
       <Path>Library</Path>
+      <Path>MonoBleedingEdge</Path>
       <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
