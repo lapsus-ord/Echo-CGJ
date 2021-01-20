@@ -10,6 +10,7 @@ using Debug = UnityEngine.Debug;
 public class PlayerHealth : MonoBehaviour
 {
     public GameObject gameOver;
+    public AudioSource hurtSound;
     public Sprite[] healthSprite;
     public Image[] healthBar;
 
@@ -61,6 +62,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.CompareTag("Snake"))
         {
+            hurtSound.Play();
             _valueHealth -= 1;
         }
     }
