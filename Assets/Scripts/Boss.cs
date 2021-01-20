@@ -6,6 +6,8 @@ public class Boss : MonoBehaviour
 {
     public GameObject sortie;
     public GameObject sortieTile;
+    public GameObject Coffre0;
+    public GameObject Coffre1;
     public AudioSource odio;
     public Enemy Slime1;
     public Enemy Slime2;
@@ -27,6 +29,9 @@ public class Boss : MonoBehaviour
         if (Slime1.health<=0&&Slime2.health<=0&&Slime3.health<=0){
             oeil.gameObject.SetActive(false);
             AudioListener.volume = 0;
+            PlayerPrefs.SetInt("nbDonjons",PlayerPrefs.GetInt("nbDonjons")+1);
+            Coffre0.SetActive(true);
+            Coffre1.SetActive(true);
         }
     }
     void sonRun(AudioSource odio) {

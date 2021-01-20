@@ -40,6 +40,9 @@ public class PlayerHealth : MonoBehaviour
         {
             hurtSound.Play();
             _valueHealth -= 2;
+        } else if (other.CompareTag("feu")){
+            hurtSound.Play();
+            _valueHealth -= 5;
         }
     }
 
