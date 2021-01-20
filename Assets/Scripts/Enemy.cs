@@ -10,25 +10,32 @@ public class Enemy : MonoBehaviour
     public float moveSpeed;
     public AudioSource odio;
 
-void Start() {
-    
-}
-private void OnTriggerEnter2D(Collider2D other) {
-    Debug.Log(" test 2");
-    if(other.CompareTag("balle")){
-        sonRun(odio);
-        Debug.Log(this.health);
-        this.health -= 1;
-        if (this.health <= 0) {
-            Death();
+    void Start()
+    {
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("balle"))
+        {
+            sonRun(odio);
+            Debug.Log(this.health);
+            this.health -= 1;
+            if (this.health <= 0)
+            {
+                Death();
+            }
         }
     }
-}
-void Death () {
-    this.gameObject.SetActive(false);
-    Debug.Log("MOOOOOORT");
-}
-void sonRun(AudioSource odio) {
-    odio.PlayDelayed(0);
-}
+
+    void Death()
+    {
+        this.gameObject.SetActive(false);
+        Debug.Log("MOOOOOORT");
+    }
+
+    void sonRun(AudioSource odio)
+    {
+        odio.PlayDelayed(0);
+    }
 }
