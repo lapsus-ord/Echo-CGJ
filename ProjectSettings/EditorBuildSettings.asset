@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Donjon1/D1 Salle Boss.unity
     guid: 9d84a04d566e945479d23bdbf4291711
+  - enabled: 1
+    path: Assets/Scenes/InterieurMaisonVieux.unity
+    guid: 9aa8e0a11d3176b4abbc443eef882018
   m_configObjects: {}
