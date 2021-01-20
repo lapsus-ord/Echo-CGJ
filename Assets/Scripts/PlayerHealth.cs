@@ -64,6 +64,9 @@ public class PlayerHealth : MonoBehaviour
         {
             hurtSound.Play();
             _valueHealth -= 1;
+        } else if (other.CompareTag("Slime")){
+            hurtSound.Play();
+            _valueHealth -= 2;
         }
     }
 
