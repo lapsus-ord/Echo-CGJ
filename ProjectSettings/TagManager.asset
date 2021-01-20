@@ -6,6 +6,7 @@ TagManager:
   tags:
   - balle
   - Snake
+  - Slime
   layers:
   - Default
   - TransparentFX
