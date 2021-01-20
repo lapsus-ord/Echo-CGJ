@@ -8,6 +8,6 @@ public class PlayerprefsValue : MonoBehaviour
     {
         PlayerPrefs.SetInt("valueHealth", 18);
         PlayerPrefs.SetFloat("posX", 1.5f);
-        PlayerPrefs.SetFloat("posX", -0.2f);
+        PlayerPrefs.SetFloat("posY", -0.2f);
     }
 }
