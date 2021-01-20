@@ -96265,8 +96265,8 @@ MonoBehaviour:
   HUD: {fileID: 790916364}
   menuPause: {fileID: 193296183}
   carte: {fileID: 1172514447}
-  croix1: {fileID: 0}
-  croix2: {fileID: 0}
+  croix1: {fileID: 1244904797}
+  croix2: {fileID: 969651073}
   croix3: {fileID: 0}
 --- !u!114 &1938653063
 MonoBehaviour:
