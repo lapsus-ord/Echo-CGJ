@@ -7,16 +7,19 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed = 5f;
+    public GameObject player;
     public Rigidbody2D rb;
     public Animator animator;
     private Vector2 _movement;
 
     public GameObject menuPause;
     private Boolean _isInPause = false;
-    public VectorValue startingPosition;
 
-    void Start() {
-        transform.position = startingPosition.initialValue;
+    void Start()
+    {
+        float posX = PlayerPrefs.GetFloat("posX");
+        float posY = PlayerPrefs.GetFloat("posY");
+        player.transform.position = new Vector3(posX, posY, 0.0f);
     }
 
     void Update()
