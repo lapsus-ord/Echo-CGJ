@@ -94102,7 +94102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneToLoad: D1 Entree
-  playerPosition: {x: -1.45, y: 0.5}
+  playerPosition: {x: -0.5, y: -1.1}
   player: {fileID: 1938653059}
 --- !u!61 &1157392147
 BoxCollider2D:
@@ -94216,7 +94216,6 @@ GameObject:
   - component: {fileID: 1172514451}
   - component: {fileID: 1172514450}
   - component: {fileID: 1172514449}
-  - component: {fileID: 1172514448}
   m_Layer: 5
   m_Name: Carte
   m_TagString: Untagged
@@ -94224,18 +94223,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1172514448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172514447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc4ddefa4e1fcbf4cade64d7500c2bce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1172514449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94494,7 +94481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1244904798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -96265,8 +96252,8 @@ MonoBehaviour:
   HUD: {fileID: 790916364}
   menuPause: {fileID: 193296183}
   carte: {fileID: 1172514447}
-  croix1: {fileID: 0}
-  croix2: {fileID: 0}
+  croix1: {fileID: 1244904797}
+  croix2: {fileID: 969651073}
   croix3: {fileID: 0}
 --- !u!114 &1938653063
 MonoBehaviour:
