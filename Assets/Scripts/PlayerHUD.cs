@@ -6,6 +6,10 @@ public class PlayerHUD : MonoBehaviour
 {
     public GameObject HUD;
     public GameObject menuPause;
+    public GameObject carte;
+    public GameObject croix1;
+    public GameObject croix2;
+    public GameObject croix3;
     
     private void Update()
     {
@@ -13,6 +17,18 @@ public class PlayerHUD : MonoBehaviour
         {
             HUD.SetActive(!HUD.activeSelf);
             menuPause.SetActive(!HUD.activeSelf);
+        }
+        if (Input.GetButtonDown("Map"))
+        {
+            HUD.SetActive(!HUD.activeSelf);
+            carte.SetActive(!HUD.activeSelf);
+            if (PlayerPrefs.GetInt("nbDonjons") == 0){
+                croix1.SetActive(true);
+                croix2.SetActive(false);
+            } else if (PlayerPrefs.GetInt("nbDonjons") == 1){
+                croix1.SetActive(false);
+                croix2.SetActive(true);
+            }
         }
     }
 }
