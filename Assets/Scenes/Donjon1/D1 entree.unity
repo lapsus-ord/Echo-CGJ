@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 349439726}
   m_Layer: 0
   m_Name: snake
-  m_TagString: Untagged
+  m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3228,7 +3228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: SpawnVillage
   playerPosition: {x: 14.5, y: 11.5}
-  player: {fileID: 0}
+  player: {fileID: 483975896}
 --- !u!1 &980982885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,7 +3241,7 @@ GameObject:
   - component: {fileID: 980982887}
   m_Layer: 0
   m_Name: Audio Source
-  m_TagString: Untagged
+  m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3664,7 +3664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: D1 Salle 1
   playerPosition: {x: 4.5, y: -1.45}
-  player: {fileID: 0}
+  player: {fileID: 483975896}
 --- !u!61 &1173735163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13678,7 +13678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: D1 Salle 1
   playerPosition: {x: -5.5, y: -1.45}
-  player: {fileID: 0}
+  player: {fileID: 483975896}
 --- !u!61 &2020768771
 BoxCollider2D:
   m_ObjectHideFlags: 0

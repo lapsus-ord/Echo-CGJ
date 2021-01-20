@@ -14,10 +14,36 @@ public class PlayerHealth : MonoBehaviour
     public Sprite[] healthSprite;
     public Image[] healthBar;
 
-    private int _valueHealth = 18;
+    private int _valueHealth;
+
+    void Awake()
+    {
+        Debug.Log("Vie : " + PlayerPrefs.GetInt("valueHealth"));
+        _valueHealth = PlayerPrefs.GetInt("valueHealth");
+        Verification(_valueHealth, healthBar, healthSprite);
+    }
 
     // Mise à jour de la vie du perso 
     private void Update()
+    {
+        Verification(_valueHealth, healthBar, healthSprite);
+        PlayerPrefs.SetInt("valueHealth", _valueHealth);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Snake"))
+        {
+            hurtSound.Play();
+            _valueHealth -= 1;
+        } else if (other.CompareTag("Slime"))
+        {
+            hurtSound.Play();
+            _valueHealth -= 2;
+        }
+    }
+
+    void Verification(int value, Image[] healthBar, Sprite[] healthSprite)
     {
         if (_valueHealth == 15)
         {
@@ -55,18 +81,6 @@ public class PlayerHealth : MonoBehaviour
             healthBar[1].sprite = healthSprite[0];
             healthBar[2].sprite = healthSprite[0];
             StartCoroutine("WaitForSeconds");
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Snake"))
-        {
-            hurtSound.Play();
-            _valueHealth -= 1;
-        } else if (other.CompareTag("Slime")){
-            hurtSound.Play();
-            _valueHealth -= 2;
         }
     }
 

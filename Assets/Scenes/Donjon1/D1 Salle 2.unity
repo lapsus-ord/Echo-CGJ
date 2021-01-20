@@ -7568,7 +7568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: D1 Salle Boss
   playerPosition: {x: -1.5, y: -4.25}
-  player: {fileID: 0}
+  player: {fileID: 1678644805}
 --- !u!61 &704206821
 BoxCollider2D:
   m_ObjectHideFlags: 0
