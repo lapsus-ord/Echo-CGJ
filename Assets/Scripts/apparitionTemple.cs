@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class apparitionTemple : MonoBehaviour {
 
-    private nbTemplesFaits raccourcisParent;
-
-    void Start() {
-        raccourcisParent = gameObject.GetComponentInParent<nbTemplesFaits>();
-    }
+    public int nbDuTemple;
 
     private void OnTriggerEnter2D(Collider2D other) {
 
-        if(other.CompareTag("Player") && !other.isTrigger && raccourcisParent.testNbTemples()){
+        if(other.CompareTag("Player") && !other.isTrigger && nbDuTemple == PlayerPrefs.GetInt("nbDonjons") + 1){
             Debug.Log("Temple activation");
-            transform.GetChild(raccourcisParent.NbFaits).gameObject.SetActive(true);
+            transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 }
