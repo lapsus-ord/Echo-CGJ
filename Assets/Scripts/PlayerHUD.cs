@@ -9,7 +9,6 @@ public class PlayerHUD : MonoBehaviour
     public GameObject carte;
     public GameObject croix1;
     public GameObject croix2;
-    public GameObject croix3;
     
     private void Update()
     {
