@@ -93646,13 +93646,15 @@ GameObject:
   - component: {fileID: 1157392144}
   - component: {fileID: 1157392143}
   - component: {fileID: 1157392145}
+  - component: {fileID: 1157392147}
+  - component: {fileID: 1157392146}
   m_Layer: 0
   m_Name: Temple 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1157392142
 Transform:
   m_ObjectHideFlags: 0
@@ -94087,6 +94089,47 @@ EdgeCollider2D:
   - {x: 13.445979, y: 11.992452}
   - {x: 13.478718, y: 11.747536}
   - {x: 13.952943, y: 11.784849}
+--- !u!114 &1157392146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157392141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 866c77bbd95e8364c95e5446d995cf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneToLoad: D1 Entree
+  playerPosition: {x: -0.5, y: -1.18}
+  playerStorage: {fileID: 11400000, guid: ce78acf565966ff44bf778378f5167b0, type: 2}
+--- !u!61 &1157392147
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157392141}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 14.5, y: 12.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1162936793
 GameObject:
   m_ObjectHideFlags: 0
