@@ -1,5 +1,6 @@
 # Amon's Legacy
-Jeu fait pendant la 5e Édition de la CGJ (de l'IUT Montpellier).
+Jeu fait pendant la 5e Édition de la CGJ (de l'IUT Montpellier).\
+Le thème était : "**Chasse au trésor**".
 
 **Résumé :**\
 Un archéologue étant toujours en quête de trésors, entendit parler d'une fabuleuse relique, la *Croix de Vie*, un artefact conférant la vie éternelle.
