@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class Serpent : Enemy
 {
-    public Transform target;
+    private Transform target;
     public float chaseRadius;
     public float attackRadius;
-    public Transform homePosition;
 
     float mx;
     float my;

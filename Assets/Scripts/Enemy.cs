@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("balle"))
         {
-            sonRun(odio);
+            odio.Play();
             Debug.Log(this.health);
             this.health -= 1;
             if (this.health <= 0)
@@ -32,10 +32,5 @@ public class Enemy : MonoBehaviour
     {
         this.gameObject.SetActive(false);
         Debug.Log("MOOOOOORT");
-    }
-
-    void sonRun(AudioSource odio)
-    {
-        odio.PlayDelayed(0);
     }
 }
